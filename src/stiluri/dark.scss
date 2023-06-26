@@ -1,0 +1,118 @@
+.app.dark {
+    background-color: #242333;
+    ;
+    color: #FFFFFF;
+
+    td {
+        background-color: #242333;
+        color: white;
+        border: thin solid #ccccff;
+    }
+
+    th {
+        color: white;
+    }
+
+    .Tabeldate {
+        background-color: #242333;
+        ;
+        color: #FFFFFF;
+    }
+
+    .cautare-container {
+        width: 8%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        border: 0.5px solid #ccccff;
+
+
+        input {
+            border: none;
+            outline: none;
+            background: transparent;
+            color: white;
+
+            &::placeholder {
+                font-size: 12px;
+
+            }
+        }
+    }
+
+    .navbar {
+        .wrapper {
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .cautare {
+                display: flex;
+                align-items: center;
+                border: 0.5px solid #ccccff;
+                padding: 3px;
+
+
+
+
+                input {
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    color: white;
+
+
+
+                    &::placeholder {
+                        font-size: 12px;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+
+    form {
+        display: flex;
+        gap: 5px;
+        font-size: 15px;
+
+        input {
+            border: none;
+            outline: none;
+            background: transparent;
+            border: 0.5px solid #ccccff;
+            color: white;
+
+
+
+            &::placeholder {
+                font-size: 12px;
+                color: white;
+            }
+        }
+    }
+
+    .cautare {
+        color: #FFFF;
+    }
+
+    .datelogare {
+        width: 200px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        border: none;
+        outline: none;
+        background: transparent;
+        border: 0.5px solid #ccccff;
+        color: white;
+    }
+
+    hr {
+        border: thin solid #ccccff;
+    }
+}

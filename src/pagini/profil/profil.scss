@@ -1,0 +1,89 @@
+.singura{
+    display: flex;
+ 
+   
+    .singurContainer{
+flex: 6;
+
+.sus {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+
+    .stanga{
+        flex: 1;
+        -webkit-box-shadow: 2px 4px 10px 1px #01B0D3;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47 );
+  padding: 10px;
+  position: relative;
+
+  .ButonEdit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:5px;
+    font-size: 12px;
+   
+    background-color: #01B0D3;
+    cursor: pointer;
+    border-radius: 0px 0px 0px 5px;
+  }
+
+  .obiect{
+    display: flex;
+    gap: 20px;
+
+    .obiectImage{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+
+
+    .detalii{
+        .obiectTitlu{
+            margin-bottom: 10px;
+          
+        }
+        .detaliiObiect{
+            font-size: 14px;
+            margin-bottom: 10px;
+
+            .obiectKey{
+                font-weight: bold;
+            
+                margin-right: 5px;
+            }
+            .obiectValoare{
+                font-weight: 300;
+
+            }
+        }
+    }
+  }
+    }
+
+    .dreapta{
+        flex: 2;
+      
+    }
+}
+    
+    .buton{
+        img {
+            max-width: 150px;
+        }
+        -webkit-box-shadow: 2px 4px 10px 1px #01B0D3;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47 );
+        padding: 20px;
+        margin:  10px 20px;
+        
+    }
+    .titlu{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+}

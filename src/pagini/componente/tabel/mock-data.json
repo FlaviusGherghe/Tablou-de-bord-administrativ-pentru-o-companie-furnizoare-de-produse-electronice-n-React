@@ -1,0 +1,62 @@
+
+[
+    {
+        "id":1,
+        "ID":"253",
+        "icon":"produse/produs001.png",
+        "Produs":"Asus GL530VD",
+        "Client":"ElectroncisWorld",
+        "Data":"22.05.2022",
+        "Cantitate": "5",
+        "Plata":"Card",
+        "Status":"Ramburs"
+    },
+    {
+        "id":2,
+        "ID":"254",
+        "icon":"produse/produs002.png",
+        "Produs":"Logitech 1200",
+        "Client":"ElectroncisWorld",
+        "Data":"10.06.2022",
+        "Cantitate": "10",
+        "Plata":"In rate online",
+        "Status":"Livrat"
+    },
+    
+    {
+        "id":3,
+        "ID":"255",
+        "icon":"produse/produs003.png",
+        "Produs":"Philips T200",
+        "Client":"BestMonitors",
+        "Data":"02.03.2022",
+        "Cantitate": "2",
+        "Plata":"Card online",
+        "Status":"Livrat"
+    },
+    
+    {
+        "id":4,
+        "ID":"256",
+        "icon":"produse/produs004.png",
+        "Produs":"Microsoft Keyboard 3000",
+        "Client":"DepoPC",
+        "Data":"22.05.2022",
+        "Cantitate": "7",
+        "Plata":"Card online",
+        "Status":"In curs de livrare"
+    },
+    
+    {
+        "id":5,
+        "ID":"257",
+        "icon":"produse/produs005.png",
+        "Produs":"SAMSUNG 4K ULTRAWIDE",
+        "Client":"BestMonitors",
+        "Data":"27.07.2022",
+        "Cantitate": "23",
+        "Plata":"Ramburs",
+        "Status":"In asteptare"
+    }
+    
+]

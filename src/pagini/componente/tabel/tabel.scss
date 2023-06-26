@@ -1,0 +1,58 @@
+.tabel{
+  justify-content: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+
+  img{
+   
+    border-radius: 10%;
+   
+  }
+
+
+ table {
+  border-collapse: collapse;
+
+} 
+
+
+input{
+  width: 100%;
+}
+
+
+
+th,
+td {
+  border: thin solid #ccccff;
+  text-align: center;
+  padding: 4px;
+  font-size: 14px;
+}
+
+th {
+  background-color: #ff3444;
+}
+
+
+form {
+  display: flex;
+  gap: 5px;
+  font-size: 15px;
+}
+
+form td:last-child {
+  display: flex;
+
+}
+
+
+.versiunea1{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+}

@@ -1,0 +1,189 @@
+.postare {
+    display: flex;
+
+    .containermove {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .test3{
+        margin: 10px;
+        input{
+            width: 14%;
+          }
+    }
+    .containerPostari {
+        flex: 6;
+
+        .test{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigatiepostari {
+            display: flex;
+            margin: 10px;
+            color: #555;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            justify-content: space-between;
+
+
+
+            button {
+                width: 150px;
+                height: 35px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+                margin: 5px;
+            }
+       
+        }
+        .cautare-container {
+            display: flex;
+            align-items: center;
+            border: 0.5px solid #ccccff;
+            padding: 4px;
+           max-width: 200px;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                width: 200px;
+
+                &::placeholder {
+                    font-size: 12px;
+
+                }
+            }
+        }
+
+        .test2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .postari {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 60%;
+            min-height: 100%;           
+            gap: 20px;
+
+            .post {
+                display: flex;
+                gap: 15px;
+                font-size: 18px;
+                flex-direction: column;
+                max-width: 100%;
+                min-height: 100%;
+                -webkit-box-shadow: 2px 4px 10px 1px #01B0D3;
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+               
+                img{
+                    max-width: 450px;
+                }
+                
+                .pozaprofil,
+                .descriere {
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .descriere {
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+
+                h2 {
+                    font-size: 12px;
+                }
+
+                &.proprietar {
+                    flex-direction: row-reverse;
+                    align-self: flex-end;
+
+
+                }
+
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .imaginiactiuni {
+                    display: flex;
+                    margin-left: 50px;
+                    gap: 5px;
+                }
+
+                .actiuni {
+                    width: 16px;
+                    gap: 15px;
+                }
+
+                p {
+                    max-width: 50%;
+                    padding: 20px;
+                    background-color: rgb(144, 181, 202);
+                    border-radius: 1px 10px 10px 10px;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        hr {
+            height: 0;
+            border: 0.5px solid lightgray;
+
+        }
+
+        .addHome {
+            width: 100px;
+            height: 40px;
+            margin-bottom: 15px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .scris {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            justify-content: center;
+
+            button {
+                width: 100px;
+                height: 40px;
+                padding: 10px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+
+                margin-left: auto;
+                margin-right: auto;
+                margin: 15px;
+
+            }
+        }
+    }
+}

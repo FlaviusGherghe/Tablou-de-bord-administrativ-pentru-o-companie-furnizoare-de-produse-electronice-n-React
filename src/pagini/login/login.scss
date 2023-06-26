@@ -1,0 +1,127 @@
+.validare{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+;
+}
+
+.directii{
+    width: 60%;
+    height: 75%;
+    -webkit-box-shadow: 2px 4px 10px 1px #01B0D3;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47 );
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+   
+   
+}  
+
+.lastanga,.ladreapta{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mediana{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sau{
+    border: 2px solid  #ccccff;
+    border-radius: 50%;
+    padding: 10px;
+    color: #ff3444;
+   font-weight: bold;
+}
+
+.linie{
+    width: 1px;
+    height: 70%;
+    background-color:#ccccff ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.poza{
+    margin-right: 85px;
+    width: 150px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.intrebare{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.datelogare{
+    width: 250px;
+    height: 35px;
+    border: none;
+    margin: 12px  -10px ;
+      outline: none;
+      background: transparent; 
+      border: 0.5px solid #ccccff;
+      border-radius: 15px;
+      text-align: center;
+   
+}
+
+.submit{
+    width: 150px;
+    font-weight: bold;
+    background-color: #ff3444;
+    border: none;
+    padding: 10px ;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+   
+}
+
+.TitluValidare{
+    position: absolute;
+    top: 150px;
+    color: #ff3444;
+}
+
+.succes{
+    display: inline-block;
+}
+
+
+.ladreapta img{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    
+}
+
+.usernamelogin, .passwordlogin{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+

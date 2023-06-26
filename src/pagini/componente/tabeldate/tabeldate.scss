@@ -1,0 +1,96 @@
+.Tabeldate {
+  justify-content: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+
+
+
+
+ img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  
+ table {
+  border-collapse: collapse;
+  width: 1200px;
+} 
+
+
+
+
+.cautare-container {
+  width: 20%;
+  padding: 10px;
+  font-size: 10px;
+  outline: none;
+  border: 0.5px solid #ccccff;
+  display: flex;
+
+  img{
+    width: 16px;
+    height: 16px;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+
+
+    &::placeholder {
+      font-size: 12px;
+
+    }
+  }
+}
+
+.table-container {
+  border-collapse: collapse;
+  border: thin solid #ccccff;
+  background-color: transparent;
+
+}
+
+th,
+td {
+  border: thin solid #ccccff;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  
+
+}
+
+th {
+  background-color: #ff3444;
+}
+
+
+form {
+  display: flex;
+  gap: 5px;
+  font-size: 15px;
+
+  input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 0.5px solid #ccccff;
+    width: 100%;
+
+
+
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+}
+
+}

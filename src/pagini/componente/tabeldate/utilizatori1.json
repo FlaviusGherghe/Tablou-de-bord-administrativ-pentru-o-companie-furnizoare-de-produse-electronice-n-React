@@ -1,0 +1,49 @@
+ [
+    {
+        "id": 1,
+        "Icon":"user/utilizator1.png",
+        "nume": "BADEA",
+        "prenume": "ION",
+        "adresa": "Strada Izvorul Rece nr. 45A Craiova",
+        "telefon": "0748194087",
+        "email": "badea.ion@email.com"
+      },
+      {
+        "id": 2,
+        "Icon":"user/utilizator2.png",
+        "nume": "BICU  ",
+        "prenume": "AIDA",
+        "adresa": "Calea Bucuresti nr. 142 Craiova",
+        "telefon": "0374747010",
+        "email": "bicu.aida@email.com"
+      },
+      {
+        "id": 3,
+        "Icon":"user/utilizator2.png",
+        "nume": "COBZARU",
+        "prenume": "ALINA ",
+        "adresa": "B-dul Decebal nr. 85 Bucuresti",
+        "telefon": "0770469955",
+        "email": "cobzaru.alina@email.com"
+      },
+      {
+        "id": 4,
+        "Icon":"user/utilizator1.png",
+        "nume": "PANA",
+        "prenume": "GHEORGHE",
+        "adresa": "Calea Severinului nr. 1-3 Severin",
+        "telefon": "02081033149",
+        "email": "pana.gheorghe@email.com"
+      },
+      {
+        "id": 5,
+        "Icon":"user/utilizator1.png",
+        "nume": "POPESCU",
+        "prenume": "MIHAI OCTAVIAN",
+        "adresa": "Calea Caracal nr. 258 Caracal",
+        "telefon": "0737189699",
+        "email": "popescu.mihai@email.com"
+      }
+
+
+]

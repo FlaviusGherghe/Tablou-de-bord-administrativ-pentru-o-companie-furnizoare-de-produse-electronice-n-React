@@ -1,0 +1,42 @@
+.Statistici{
+    display: flex;
+    
+
+.containerStatistici{
+    flex:6;
+
+.totstatistici{
+    width: 100%;
+}
+
+.statistica1, .statistica2{
+    display: flex;
+    
+    padding: 20px;
+    gap: 20px;
+   
+}
+
+
+.statistica2{
+    padding: 5px 20px;
+    margin: 20px;
+    -webkit-box-shadow: 2px 4px 10px 1px #01B0D3;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47 );
+    align-items: center;
+}
+
+.grafic1{
+    margin-left: 18%;
+    margin-top: 100px;
+}
+
+
+
+.grafic4 {
+    -webkit-box-shadow: 2px 4px 10px 1px #01B0D3;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47 );
+   
+    }
+}
+}

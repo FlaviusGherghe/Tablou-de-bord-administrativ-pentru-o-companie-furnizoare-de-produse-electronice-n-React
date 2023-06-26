@@ -1,0 +1,16 @@
+.Calendar{
+    display: flex;
+  
+   
+    
+    .calendarContainer{
+       
+       flex: 6;
+       .tot {
+        -webkit-box-shadow: 2px 4px 10px 1px #01B0D3;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47 );
+        margin: 20px;
+       }
+    }
+}
+  
