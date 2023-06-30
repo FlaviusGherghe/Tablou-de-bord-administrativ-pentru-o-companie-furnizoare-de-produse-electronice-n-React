@@ -1,8 +1,6 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import "./tabel.scss"
-import data from "./mock-data.json"
-import { nanoid } from 'nanoid';
 import axios from "axios";
 import img32 from "./images/upload.png"
 import { Link } from "react-router-dom";
@@ -10,7 +8,7 @@ import { Link } from "react-router-dom";
 const Tabel = () => {
   const [file, setFile] = useState(null);
   // Declarare variabile
-  const [tranzactii, setContacte] = useState([]);
+  const [tranzactii, setTranzactii] = useState([]);
   const [tranzactie, setTranzactie] = useState({
 
     produs: "",
@@ -47,7 +45,7 @@ const Tabel = () => {
     const fetchAllTranzactii = async () => {
       try {
         const res = await axios.get("http://localhost:8800/tranzactii");
-        setContacte(res.data);
+        setTranzactii(res.data);
       } catch (err) {
         console.log(err.response.data);
       }
@@ -111,8 +109,8 @@ const Tabel = () => {
               <td>{tranzactie.cantitate}</td>
               <td>{tranzactie.plata}</td>
               <td>{tranzactie.status}</td>
-              <td><Link to={`/modificaTranzactii/${tranzactie.id}`} style={{ color: "inherit", textDecoration: "none" }}><button className="update">Modifica</button></Link>
-                <button type="button" onClick={() => handleDelete(tranzactie.id)}>Sterge</button></td>
+              <td><div className="butoane"><Link to={`/modificaTranzactii/${tranzactie.id}`} style={{ color: "inherit", textDecoration: "none" }}><button className="update">Modifica</button></Link>
+                <button type="button" onClick={() => handleDelete(tranzactie.id)}>Sterge</button></div></td>
             </tr>
           ))}
         </tbody>
@@ -120,15 +118,24 @@ const Tabel = () => {
 
       {/* Formular de adăugare produse */}
       <h2 className="versiunea1">Adauga o tranzactie</h2>
-      <form >
-        <input name="icon" type="file" onChange={(event) => setFile(event.target.files[0])} />
+      <form className="jos" >
+      <label className="icon"><label htmlFor='file'><img  src={img32} alt="" className="icon" /></label></label>
+              <input className='inputuri2' name="icon" type="file" id="file" onChange={e=>setFile(e.target.files[0])} style={{display:"none"}}  />
         <input type="text" name="produs" value={tranzactie.produs} onChange={handleChange} placeholder="Produs" />
         <input type="text" name="client" value={tranzactie.client} onChange={handleChange} placeholder="Client" />
         <input type="date" name="data" value={tranzactie.data} onChange={handleChange} placeholder="Data" />
         <input type="text" name="cantitate" value={tranzactie.cantitate} onChange={handleChange} placeholder="Cantitate" />
-        <input type="text" name="plata" value={tranzactie.plata} onChange={handleChange} placeholder="Plata" />
-        <input type="text" name="status" value={tranzactie.status} onChange={handleChange} placeholder="Status" />
-        <button onClick={handleClick}>Adauga</button>
+        <select name="plata" value={tranzactie.plata} id="plata" onChange={handleChange}>
+              <option value="card">Card</option>
+              <option value="ramburs">Ramburs</option>
+              <option value="rate">Rate</option>
+            </select>
+            <select name="status" value={tranzactie.status} id="status" onChange={handleChange}>
+              <option value="inasteptare">In asteptare</option>
+              <option value="esuata">Esuata</option>
+              <option value="efectuata">Efectuata</option>
+            </select>
+       <div className="butoane"><button  onClick={handleClick}>Adauga</button></div>
       </form>
     </div>
   );

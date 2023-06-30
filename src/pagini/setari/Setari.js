@@ -39,25 +39,9 @@ function Setari() {
 
             values: [
                 {
-                    name: "Comenzi Informatii",
-                    description: "Gestionati informatiile",
-                    tags: ["credit cards"],
-                },
-                {
-                    name: "Vanzari",
-                    description: "Vezi statisticile",
-                    tags: [""],
-                },
-                {
                     name: "Comenzi",
                     description: "Vezi comenzile",
                     tags: ["credit cards"],
-                },
-
-                {
-                    name: "Comenzi adresa",
-                    description: "Vezi adresele",
-                    tags: [],
                 },
 
             ],
@@ -69,30 +53,14 @@ function Setari() {
             },
 
             values: [
-                {
-                    name: "Ajutor",
-                    description: "Am probleme",
-                    tags: [],
-                   
-                },
-                {
-                    name: "FAQ",
-                    description: "Vezi intrebarile cele mai frecvente",
-                    tags: [],
-                
-                },
+    
                 {
                     name: "Contacteaza-ne",
                     description: "Contacteaza echipa noastra de suport",
                     tags: [],
                  
                 },
-                {
-                    name: "Raporteaza o problema",
-                    description: "Raporteaza ce nu merge bine",
-                    tags: [],
-                
-                },
+
             ],
         },
     ];

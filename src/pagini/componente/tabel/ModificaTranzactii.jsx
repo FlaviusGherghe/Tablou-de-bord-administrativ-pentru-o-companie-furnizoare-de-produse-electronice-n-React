@@ -62,7 +62,7 @@ const ModificaTranzactii = () => {
   return (
     <div className='adaugaModificare'>
     <Sidebar />
-    <div className="containerModificaPostari">
+    <div className="containerModificaTranzactii">
       <Navbar />
       <div className="adaugareModificari">
         <div className="formInputContact">
@@ -95,18 +95,16 @@ const ModificaTranzactii = () => {
           onChange={handleChange}
           placeholder="Cantitate"
         /><br></br>
-        <input
-          type="text"
-          name="plata"
-          onChange={handleChange}
-          placeholder="Plata"
-        /><br></br>
-        <input
-          type="text"
-          name="status"
-          onChange={handleChange}
-          placeholder="Status"
-        /><br></br>
+         <select name="plata" id="plata" onChange={handleChange}>
+              <option value="Card">Card</option>
+              <option value="Ramburs">Ramburs</option>
+              <option value="Rate">Rate</option>
+            </select>
+            <select name="status" id="status" onChange={handleChange}>
+              <option value="In asteptare">In asteptare</option>
+              <option value="Esuata">Esuata</option>
+              <option value="Efectuata">Efectuata</option>
+            </select>
          <button onClick={handleClick}>Modifica</button>
       </form>
     </div>

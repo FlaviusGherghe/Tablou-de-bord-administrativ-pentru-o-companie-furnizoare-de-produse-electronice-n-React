@@ -19,11 +19,16 @@
 } 
 
 
-input{
+input, select{
   width: 100%;
+  gap: 20px;
 }
 
-
+.icon{
+  height: 25px;
+  width: 35px;
+  display: flex;
+}
 
 th,
 td {
@@ -40,7 +45,7 @@ th {
 
 form {
   display: flex;
-  gap: 5px;
+  gap: 15px;
   font-size: 15px;
 }
 
@@ -55,4 +60,22 @@ form td:last-child {
   font-weight: 500;
   margin-bottom: 15px;
 }
+
+.butoane{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+
+  
+  button {
+    width: 70px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+}
+
 }

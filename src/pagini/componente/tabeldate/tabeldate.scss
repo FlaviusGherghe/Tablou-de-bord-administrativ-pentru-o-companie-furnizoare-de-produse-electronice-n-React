@@ -6,8 +6,6 @@
   padding: 1rem;
 
 
-
-
  img {
     height: 50px;
     width: 50px;
@@ -21,8 +19,21 @@
   width: 1200px;
 } 
 
+.butoane{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
 
-
+  
+  button {
+    width: 80px;
+    height: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+}
 
 .cautare-container {
   width: 20%;
@@ -42,8 +53,6 @@
     outline: none;
     background: transparent;
     width: 100%;
-
-
     &::placeholder {
       font-size: 12px;
 
@@ -64,8 +73,6 @@ td {
   text-align: center;
   padding: 12px;
   font-size: 14px;
-  
-
 }
 
 th {

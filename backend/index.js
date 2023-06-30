@@ -254,6 +254,235 @@ app.put("/tranzactii/:id", (req, res) => {
   });
 });
 
+app.get("/produse", (req, res) => {
+  const q = "SELECT * FROM produse ";
+  db.query(q, (err, data) => {
+    if (err) {
+      console.log(err);
+      return res.json(err);
+    }
+    return res.json(data);
+  });
+});
+
+app.post("/produse", (req, res) => {
+  const q = "INSERT INTO produse (`icon`, `produs`, `cantitate`, `pret`) VALUES (?, ?, ?, ?)";
+  const values = [
+    req.body.icon,
+    req.body.produs,
+    req.body.cantitate,
+    req.body.pret,
+  ];
+  db.query(q, values, (err, data) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    return res.status(200).json({ success: true });
+  });
+});
+
+app.delete("/produse/:id", (req, res) => {
+  const produseId = req.params.id;
+
+
+  if (isNaN(produseId)) {
+    return res.status(400).json({ error: "Invalid ID." });
+  }
+
+  const q = "DELETE FROM produse WHERE id = ?";
+
+  db.query(q, [produseId], (err, data) => {
+    if (err) {
+      console.error("Error deleting product:", err);
+      return res.status(500).json({ error: "Failed to delete product." });
+    }
+
+    return res.json(data);
+  });
+});
+
+app.put("/produse/:id", (req, res) => {
+  const produseId = req.params.id;
+  const q = "UPDATE produse SET `icon`= ?,  `produs`= ?,  `cantitate`= ?, `pret`= ? WHERE id = ?";
+
+  const values = [
+    req.body.icon,
+    req.body.produs,
+    req.body.cantitate,
+    req.body.pret,
+  ];
+
+  db.query(q, [...values,produseId], (err, data) => {
+    if (err) {
+      console.error("Error updating products:", err);
+      return res.status(500).json({ error: "Failed to update products." });
+    }
+
+    return res.json(data);
+  });
+});
+
+
+app.get("/comenzi", (req, res) => {
+  const q = "SELECT * FROM comenzi ";
+  db.query(q, (err, data) => {
+    if (err) {
+      console.log(err);
+      return res.json(err);
+    }
+    return res.json(data);
+  });
+});
+
+app.post("/comenzi", (req, res) => {
+  const q = "INSERT INTO comenzi (`icon`, `produs`, `cantitate`, `cost`, `datalivrare`, `tara`, `regiune`, `oras`, `adresa`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+  const values = [
+    req.body.icon,
+    req.body.produs,
+    req.body.cantitate,
+    req.body.cost,
+    req.body.datalivrare,
+    req.body.tara,
+    req.body.regiune,
+    req.body.oras,
+    req.body.adresa,
+
+  ];
+  db.query(q, values, (err, data) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    return res.status(200).json({ success: true });
+  });
+});
+
+app.delete("/comenzi/:id", (req, res) => {
+  const comenziId = req.params.id;
+
+
+  if (isNaN(comenziId)) {
+    return res.status(400).json({ error: "Invalid ID." });
+  }
+
+  const q = "DELETE FROM comenzi WHERE id = ?";
+
+  db.query(q, [comenziId], (err, data) => {
+    if (err) {
+      console.error("Error deleting product:", err);
+      return res.status(500).json({ error: "Failed to delete product." });
+    }
+
+    return res.json(data);
+  });
+});
+
+app.put("/comenzi/:id", (req, res) => {
+  const comenziId = req.params.id;
+  const q = "UPDATE comenzi SET `icon`= ?,  `produs`= ?,  `cantitate`= ?, `cost`= ? ,`datalivrare` = ?, `tara` = ?, `regiune` = ?, `oras` = ? , `adresa` = ? WHERE id = ?";
+
+  const values = [
+    req.body.icon,
+    req.body.produs,
+    req.body.cantitate,
+    req.body.cost,
+    req.body.datalivrare,
+    req.body.tara,
+    req.body.regiune,
+    req.body.oras,
+    req.body.adresa,
+  ];
+
+  db.query(q, [...values,comenziId], (err, data) => {
+    if (err) {
+      console.error("Error updating products:", err);
+      return res.status(500).json({ error: "Failed to update products." });
+    }
+
+    return res.json(data);
+  });
+});
+
+
+app.get("/livrari", (req, res) => {
+  const q = "SELECT * FROM livrari ";
+  db.query(q, (err, data) => {
+    if (err) {
+      console.log(err);
+      return res.json(err);
+    }
+    return res.json(data);
+  });
+});
+
+app.post("/livrari", (req, res) => {
+  const q = "INSERT INTO livrari (`icon`, `produs`, `cantitate`, `cost`, `livratpe`, `tara`, `regiune`, `oras`, `adresa`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+  const values = [
+    req.body.icon,
+    req.body.produs,
+    req.body.cantitate,
+    req.body.cost,
+    req.body.livratpe,
+    req.body.tara,
+    req.body.regiune,
+    req.body.oras,
+    req.body.adresa,
+  ];
+  db.query(q, values, (err, data) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    return res.status(200).json({ success: true });
+  });
+});
+
+app.delete("/livrari/:id", (req, res) => {
+  const livrariId = req.params.id;
+
+
+  if (isNaN(livrariId)) {
+    return res.status(400).json({ error: "Invalid ID." });
+  }
+
+  const q = "DELETE FROM livrari WHERE id = ?";
+
+  db.query(q, [livrariId], (err, data) => {
+    if (err) {
+      console.error("Error deleting :", err);
+      return res.status(500).json({ error: "Failed to delete ." });
+    }
+
+    return res.json(data);
+  });
+});
+
+app.put("/livrari/:id", (req, res) => {
+  const livrariId = req.params.id;
+  const q = "UPDATE livrari SET `icon`= ?,  `produs`= ?,  `cantitate`= ?, `cost`= ? ,`livratpe` = ?, `tara` = ?, `regiune` = ?, `oras` = ? , `adresa` = ? WHERE id = ?";
+
+  const values = [
+    req.body.icon,
+    req.body.produs,
+    req.body.cantitate,
+    req.body.cost,
+    req.body.livratpe,
+    req.body.tara,
+    req.body.regiune,
+    req.body.oras,
+    req.body.adresa,
+  ];
+
+  db.query(q, [...values,livrariId], (err, data) => {
+    if (err) {
+      console.error("Error updating products:", err);
+      return res.status(500).json({ error: "Failed to update products." });
+    }
+
+    return res.json(data);
+  });
+});
 
 
 

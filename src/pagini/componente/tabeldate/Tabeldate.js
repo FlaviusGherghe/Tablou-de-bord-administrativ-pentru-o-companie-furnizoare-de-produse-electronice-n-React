@@ -1,11 +1,8 @@
 import "./tabeldate.scss"
-import data from "./utilizatori1.json";
 import React, { useState, Fragment } from "react";
-import { nanoid } from 'nanoid';
 import { useEffect } from "react";
 import axios from "axios";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { set } from "date-fns";
 import img13 from './images/search.png';
 
 function Tabeldate() {
@@ -39,17 +36,7 @@ function Tabeldate() {
   const [users, setUsers] = useState([]);
   const [nameList, setNameList] = useState([]);
 
-  useEffect(() => {
-    const fetchAllUsers = async () => {
-      try {
-        const res = await axios.get("http://localhost:8800/users");
-        setUsers(res.data);
-      } catch (err) {
-        console.log(err.response.data);
-      }
-    };
-    fetchAllUsers();
-  }, []);
+ 
 
   const handleDelete = async (id) => {
     try {
@@ -119,7 +106,7 @@ function Tabeldate() {
         <td>{user.adress}</td>
         <td>{user.phone}</td>
         <td>
-          <button type="button" onClick={() => handleDelete(user.id)}>Sterge</button>
+          <div className="butoane"> <button type="button" onClick={() => handleDelete(user.id)}>Sterge</button></div>
         </td>
       </tr>
     ))}

@@ -34,7 +34,9 @@ import Add from "./pagini/postari/Add";
 import Update from "./pagini/postari/Update";
 import ModificaProfil from "./pagini/profil/ModificaProfil";
 import ModificaTranzactii from "./pagini/componente/tabel/ModificaTranzactii";
-
+import ModificaProduse from "./pagini/componente/tabeldate/ModificaProduse";
+import ModificaComenzi from "./pagini/componente/tabeldate/ModificaComenzi";
+import ModificaLivrari from "./pagini/componente/tabeldate/ModificaLivrari";
 
 
 function App() {
@@ -66,6 +68,9 @@ function App() {
         <Route path="modificaPostari/:id" element={<Update/>}/>
         <Route path="modificaProfil/:id" element={<ModificaProfil/>}/>
         <Route path="modificaTranzactii/:id" element={<ModificaTranzactii/>}/>
+        <Route path="modificaProduse/:id" element={<ModificaProduse/>}/>
+        <Route path="modificaComenzi/:id" element={<ModificaComenzi/>}/>
+        <Route path="modificaLivrari/:id" element={<ModificaLivrari/>}/>
         <Route path="register" element={<Register/>}/>
         <Route path="utilizatori">
           <Route index element={<Lista/>}/>

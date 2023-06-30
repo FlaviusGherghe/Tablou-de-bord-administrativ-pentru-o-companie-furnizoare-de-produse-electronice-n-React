@@ -82,7 +82,7 @@ import moment from "moment";
               <label><h3>Titlu</h3></label>
               <input className='inputuri' name="titlu" type="text" onChange={handleChange}  ></input><br></br>
               <label> <h3>Tipul de concediu</h3></label><br></br>
-              <select name="tipconcediu" id="tipconcediu"onChange={handleChange} >
+              <select name="tipconcediu" id="tipconcediu" onChange={handleChange} >
               <option value="medical">Concediu medical</option>
               <option value="vacanta">Vacanta</option>
               <option value="maternitate">Concendiu de maternitate</option>
