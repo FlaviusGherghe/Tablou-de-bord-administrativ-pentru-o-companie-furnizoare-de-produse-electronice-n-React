@@ -12,6 +12,7 @@ const ModificaLivrari = () => {
     const [row, setRow] = useState({
         produs: "",
         cantitate: "",
+        client: "",
         cost: "",
         livratpe: "",
         tara: "",
@@ -84,6 +85,7 @@ const ModificaLivrari = () => {
           onChange={handleChange}
           placeholder="Cantitate"
         /><br></br>
+               <input type="text" name="client"  onChange={handleChange} placeholder="Client" />
         <input type="text" name="cost"  onChange={handleChange} placeholder="Cost" />
    <input type="date" name="livratpe"  onChange={handleChange} placeholder="Data Livrare" />
    <input type="text" name="tara"  onChange={handleChange} placeholder="Tara" />

@@ -35,6 +35,14 @@
         gap: 15px;
     }
 
+    .inputuri{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+       
+    }
+    
+
     input {
         border: none;
         border-bottom: 1px solid #ccccff;

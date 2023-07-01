@@ -8,9 +8,6 @@ import multer from "multer";
 import moment from "moment";
 
 
-
-
-
 const app = express()
 app.use(express.json());
 app.use(cors())
@@ -336,11 +333,12 @@ app.get("/comenzi", (req, res) => {
 });
 
 app.post("/comenzi", (req, res) => {
-  const q = "INSERT INTO comenzi (`icon`, `produs`, `cantitate`, `cost`, `datalivrare`, `tara`, `regiune`, `oras`, `adresa`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+  const q = "INSERT INTO comenzi (`icon`, `produs`, `cantitate`, `client`, `cost`, `datalivrare`, `tara`, `regiune`, `oras`, `adresa`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
   const values = [
     req.body.icon,
     req.body.produs,
     req.body.cantitate,
+    req.body.client,
     req.body.cost,
     req.body.datalivrare,
     req.body.tara,
@@ -380,12 +378,13 @@ app.delete("/comenzi/:id", (req, res) => {
 
 app.put("/comenzi/:id", (req, res) => {
   const comenziId = req.params.id;
-  const q = "UPDATE comenzi SET `icon`= ?,  `produs`= ?,  `cantitate`= ?, `cost`= ? ,`datalivrare` = ?, `tara` = ?, `regiune` = ?, `oras` = ? , `adresa` = ? WHERE id = ?";
+  const q = "UPDATE comenzi SET `icon`= ?,  `produs`= ?,  `cantitate`= ?, `client`= ?, `cost`= ? ,`datalivrare` = ?, `tara` = ?, `regiune` = ?, `oras` = ? , `adresa` = ? WHERE id = ?";
 
   const values = [
     req.body.icon,
     req.body.produs,
     req.body.cantitate,
+    req.body.client,
     req.body.cost,
     req.body.datalivrare,
     req.body.tara,
@@ -417,11 +416,12 @@ app.get("/livrari", (req, res) => {
 });
 
 app.post("/livrari", (req, res) => {
-  const q = "INSERT INTO livrari (`icon`, `produs`, `cantitate`, `cost`, `livratpe`, `tara`, `regiune`, `oras`, `adresa`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+  const q = "INSERT INTO livrari (`icon`, `produs`, `cantitate`, `client`= ?, `cost`, `livratpe`, `tara`, `regiune`, `oras`, `adresa`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
   const values = [
     req.body.icon,
     req.body.produs,
     req.body.cantitate,
+    req.body.client,
     req.body.cost,
     req.body.livratpe,
     req.body.tara,
@@ -460,12 +460,13 @@ app.delete("/livrari/:id", (req, res) => {
 
 app.put("/livrari/:id", (req, res) => {
   const livrariId = req.params.id;
-  const q = "UPDATE livrari SET `icon`= ?,  `produs`= ?,  `cantitate`= ?, `cost`= ? ,`livratpe` = ?, `tara` = ?, `regiune` = ?, `oras` = ? , `adresa` = ? WHERE id = ?";
+  const q = "UPDATE livrari SET `icon`= ?,  `produs`= ?,  `cantitate`= ?, `client`= ?, `cost`= ? ,`livratpe` = ?, `tara` = ?, `regiune` = ?, `oras` = ? , `adresa` = ? WHERE id = ?";
 
   const values = [
     req.body.icon,
     req.body.produs,
     req.body.cantitate,
+    req.body.client,
     req.body.cost,
     req.body.livratpe,
     req.body.tara,

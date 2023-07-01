@@ -24,8 +24,6 @@ function priceRow(cantitate, pret) {
   return cantitate * pret;
 }
 
-
-
 function createRow(desc, cantitate, produs, pret) {
   const price = priceRow(cantitate, pret);
   return {  desc, cantitate, produs, pret };
@@ -34,8 +32,6 @@ function createRow(desc, cantitate, produs, pret) {
 function subtotal(items) {
   return items.map(({  pret }) =>  pret).reduce((sum, i) => sum + i, 0);
 }
-
-
 
 const TabelDateComenzi = () => {
 

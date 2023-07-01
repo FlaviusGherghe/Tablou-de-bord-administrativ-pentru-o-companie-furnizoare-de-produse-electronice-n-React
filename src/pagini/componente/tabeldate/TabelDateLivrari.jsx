@@ -30,6 +30,7 @@ const TabelDateLivrari = () => {
   const [row, setRow] = useState({
     produs: "",
     cantitate: "",
+    client: "",
     cost: "",
     livratpe: "",
     tara: "",
@@ -133,6 +134,7 @@ useEffect(() => {
           <TableCell align="center">Imagine</TableCell>
             <TableCell align="center">Produs</TableCell>
             <TableCell align="center">Cantitate</TableCell>
+            <TableCell align="center">Client</TableCell>
             <TableCell align="center">De plata</TableCell>
             <TableCell align="center">Data livrare</TableCell>
             <TableCell align="center">Tara</TableCell>
@@ -149,6 +151,7 @@ useEffect(() => {
         <TableCell align='center'><img src={"http://localhost:8800//upload/" + row.icon}alt="" /></TableCell>
         <TableCell align="center">{row.produs}</TableCell>
         <TableCell align="center">{row.cantitate}</TableCell>
+        <TableCell align="center">{row.client}</TableCell>
         <TableCell align="center">{row.cost}</TableCell>
         <TableCell align="center">{row.livratpe}</TableCell>
         <TableCell align="center">{row.tara}</TableCell>
@@ -181,6 +184,7 @@ useEffect(() => {
                 <input className='inputuri2' name="icon" type="file" id="file" onChange={e=>setFile(e.target.files[0])} style={{display:"none"}}  />
        <input type="text" name="produs" value={row.produs} onChange={handleChange} placeholder="Produs" />
        <input type="text" name="cantitate" value={row.cantitate} onChange={handleChange} placeholder="Cantitate" />
+       <input type="text" name="client" value={row.client} onChange={handleChange} placeholder="Client" />
        <input type="text" name="cost" value={row.cost} onChange={handleChange} placeholder="Cost" />
        <input type="date" name="livratpe" value={row.livratpe} onChange={handleChange} placeholder="Data Livrare" />
        <input type="text" name="tara" value={row.tara} onChange={handleChange} placeholder="Tara" />

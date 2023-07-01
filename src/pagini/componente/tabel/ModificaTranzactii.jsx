@@ -68,33 +68,33 @@ const ModificaTranzactii = () => {
         <div className="formInputContact">
           <h1>Modifica o tranzactie</h1><br></br><br></br>
           <div className="form">
-      <form >
+      <form className='inputuri' >
       <label><h3>Imagine</h3><label htmlFor='file'><img  src={img32} alt="" className="icon" /></label></label>
-              <input className='inputuri2' name="icon" type="file" id="file" onChange={e=>setFile(e.target.files[0])} style={{display:"none"}}/><br></br>
+              <input className='inputuri2' name="icon" type="file" id="file" onChange={e=>setFile(e.target.files[0])} style={{display:"none"}}/>
         <input
           type="text"
           name="produs"
           onChange={handleChange}
           placeholder="Produs"
-        /><br></br>
+        />
         <input
           type="text"
           name="client"
           onChange={handleChange}
           placeholder="Client"
-        /><br></br>
+        />
         <input
           type="date"
           name="data"
           onChange={handleChange}
           placeholder="Data"
-        /><br></br>
+        />
         <input
           type="text"
           name="cantitate"
           onChange={handleChange}
           placeholder="Cantitate"
-        /><br></br>
+        />
          <select name="plata" id="plata" onChange={handleChange}>
               <option value="Card">Card</option>
               <option value="Ramburs">Ramburs</option>
