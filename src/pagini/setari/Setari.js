@@ -34,6 +34,21 @@ function Setari() {
 
         {
             header: {
+                name: "Produse",
+            },
+
+            values: [
+                {
+                    name: "Produse",
+                    description: "Vezi produsele",
+                    tags: ["credit cards"],
+                },
+
+            ],
+        },
+
+        {
+            header: {
                 name: "Comenzi",
             },
 
@@ -41,6 +56,36 @@ function Setari() {
                 {
                     name: "Comenzi",
                     description: "Vezi comenzile",
+                    tags: ["credit cards"],
+                },
+
+            ],
+        },
+
+        {
+            header: {
+                name: "Livrari",
+            },
+
+            values: [
+                {
+                    name: "Livrari",
+                    description: "Vezi livrarile",
+                    tags: ["credit cards"],
+                },
+
+            ],
+        },
+
+        {
+            header: {
+                name: "Statistici",
+            },
+
+            values: [
+                {
+                    name: "Statistici",
+                    description: "Vezi statisticile",
                     tags: ["credit cards"],
                 },
 
