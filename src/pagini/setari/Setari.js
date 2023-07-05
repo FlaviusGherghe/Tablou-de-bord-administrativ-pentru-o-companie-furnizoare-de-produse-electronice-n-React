@@ -100,7 +100,7 @@ function Setari() {
             values: [
     
                 {
-                    name: "Contacteaza-ne",
+                    name: "Contact",
                     description: "Contacteaza echipa noastra de suport",
                     tags: [],
                  
@@ -168,7 +168,7 @@ function Setari() {
                             <div className='headerTitlu'>Setari</div>
                         </span>
                     </h1>
-                    <input type="text" className='cautaresetari' onChange={onChange} placeholder='Cauta...'></input>
+                    <input type="text" className='cautare-container' onChange={onChange} placeholder='Cauta...'></input>
                     <div>
                         {OptiuniVizibile.map((optiuni) => (
                             <div key={optiuni.header.name} className="optiuniHeader"><h3>{optiuni.header.name}</h3>
@@ -177,7 +177,9 @@ function Setari() {
                                         <div key={value.name}>
                                             <ul className='lista-grup'>
                                                 <li className='lista-grupObiect'>
-                                                    <h6 className="valoareNume">{value.name}</h6>
+                                                    <h6 className="valoareNume"><Link to={`/${value.name.toLowerCase()}`} style={{textDecoration:"none" , color:"inherit"}} >
+    {value.name}
+  </Link></h6>
                                                     <p>{value.description}<img className="iconSetari" width="12px" src={sageata} alt="" /></p>
                                                 </li>
                                             </ul>

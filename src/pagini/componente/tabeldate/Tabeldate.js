@@ -72,9 +72,7 @@ function Tabeldate() {
       <img className="icon" src={img13} alt=""/>
         <input name="cauta" type="text" placeholder="Cauta..." onChange={(e)=>setSearch(e.target.value)}/>
       </div>
-      <div className="search-results">
 
-    </div>
       <form >
         <div className="table-container">
         

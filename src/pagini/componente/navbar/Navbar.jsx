@@ -63,8 +63,7 @@ return () => {
     <div className="navbar">
     <div className="wrapper" id="myMenu">
       <div className="cautare">
-       <Searchbar></Searchbar>
-        <img className="icon" src={img13} alt=""/>
+       <Searchbar/>
       </div>
       <div className="obiecte">
         <div className="obiect"><img className="icon" src={img14} alt=""/>

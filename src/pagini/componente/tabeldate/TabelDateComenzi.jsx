@@ -129,7 +129,7 @@ useEffect(() => {
               Detalii
             </TableCell>
             <TableCell align="center" colSpan={3}>Plata</TableCell>
-            <TableCell align="center" colSpan={5}>Transport</TableCell>
+            <TableCell align="center" colSpan={6}>Transport</TableCell>
           </TableRow>
           <TableRow>
           <TableCell align="center">ID</TableCell>
@@ -170,9 +170,9 @@ useEffect(() => {
     ))}
     
     <TableRow>
-    <TableCell rowSpan={3} />
-    <TableCell rowSpan={3} />
-    <TableCell rowSpan={3} />
+    <TableCell/>
+    <TableCell/>
+    <TableCell/>
     <TableCell colSpan={2}>Total</TableCell>
     <TableCell align="center">{ccyFormat(invoiceSubtotal)}</TableCell>
     <TableCell colSpan={6} />

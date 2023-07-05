@@ -1,6 +1,6 @@
 .app.dark {
     background-color: #242333;
-    ;
+    
     color: #FFFFFF;
 
     td {
@@ -15,29 +15,23 @@
 
     .Tabeldate {
         background-color: #242333;
-        ;
+        
         color: #FFFFFF;
     }
 
     .cautare-container {
-        width: 8%;
         padding: 10px;
         font-size: 10px;
+        color: #FFFFFF;
+        input{
+        border: none;
         outline: none;
-        border: 0.5px solid #ccccff;
-
-
-        input {
-            border: none;
-            outline: none;
-            background: transparent;
-            color: white;
-
-            &::placeholder {
-                font-size: 12px;
-
-            }
+        background: transparent;
+        width: 100%;
+        color: #FFFFFF;
         }
+
+  
     }
 
     .navbar {
@@ -49,29 +43,7 @@
             justify-content: space-between;
 
 
-            .cautare {
-                display: flex;
-                align-items: center;
-                border: 0.5px solid #ccccff;
-                padding: 3px;
-
-
-
-
-                input {
-                    border: none;
-                    outline: none;
-                    background: transparent;
-                    color: white;
-
-
-
-                    &::placeholder {
-                        font-size: 12px;
-                        color: white;
-                    }
-                }
-            }
+        
         }
 
     }
@@ -87,19 +59,39 @@
             background: transparent;
             border: 0.5px solid #ccccff;
             color: white;
-
-
-
+    
+    
+    
             &::placeholder {
                 font-size: 12px;
                 color: white;
             }
         }
+
     }
 
-    .cautare {
-        color: #FFFF;
+.cautare{
+
+    input {
+        border: none;
+        outline: none;
+        background: transparent;
+    
+        color: white;
+
+
+
+        &::placeholder {
+            font-size: 12px;
+            color: white;
+        }
     }
+
+}
+
+
+  
+
 
     .datelogare {
         width: 200px;
